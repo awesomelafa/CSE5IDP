@@ -13,12 +13,11 @@
         android:layout_gravity="center">
 
         <ImageView
+            android:id="@+id/image_view"
             android:layout_width="330dp"
             android:layout_height="330dp"
-            android:id="@+id/image_view"
             android:layout_gravity="center"
-            android:src="@drawable/image1">
-        </ImageView>
+            android:src="@drawable/image1"></ImageView>
 
         <TextView
             android:layout_width="match_parent"
