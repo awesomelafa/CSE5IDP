@@ -48,7 +48,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                app:tint="@android:color/black"
+                app:tint="@android:color/white"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:id="@+id/previous"
@@ -62,19 +62,19 @@
                 app:srcCompat="@drawable/playbutton" />
 
             <ImageView
-                app:tint="@android:color/black"
+                app:tint="@android:color/white"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:id="@+id/next"
                 android:src="@drawable/skip_next_24"/>
         </LinearLayout>
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTo="20dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -102,6 +102,32 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_start_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_centerHorizontal="true"
+            android:text="start"
+            />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_marginLeft="11dp"
+            android:text="reset"
+            android:visibility="invisible" />
 
 
     </LinearLayout>
